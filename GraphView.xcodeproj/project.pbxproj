@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		181DF3CC1DCE9BF20021420F /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DF3CB1DCE9BF20021420F /* ScrollableGraphView.swift */; };
+		18BCCEC91DCEA3C1000ECFD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCEC81DCEA3C1000ECFD8 /* LoginViewController.swift */; };
 		291839A21C72E6A400753A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291839A11C72E6A400753A45 /* AppDelegate.swift */; };
 		291839A41C72E6A400753A45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291839A31C72E6A400753A45 /* ViewController.swift */; };
 		291839A71C72E6A400753A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291839A51C72E6A400753A45 /* Main.storyboard */; };
@@ -18,7 +19,8 @@
 
 /* Begin PBXFileReference section */
 		181DF3CB1DCE9BF20021420F /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
-		2918399E1C72E6A400753A45 /* GraphView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BCCEC81DCEA3C1000ECFD8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2918399E1C72E6A400753A45 /* WUMP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WUMP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		291839A11C72E6A400753A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		291839A31C72E6A400753A45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = GraphView/ViewController.swift; sourceTree = "<group>"; };
 		291839A61C72E6A400753A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 		2918399F1C72E6A400753A45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2918399E1C72E6A400753A45 /* GraphView.app */,
+				2918399E1C72E6A400753A45 /* WUMP.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				291839A31C72E6A400753A45 /* ViewController.swift */,
+				18BCCEC81DCEA3C1000ECFD8 /* LoginViewController.swift */,
 				29559B7F1C742D7800E77931 /* UIColor+colorFromHex.swift */,
 			);
 			name = Example;
@@ -91,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2918399D1C72E6A400753A45 /* GraphView */ = {
+		2918399D1C72E6A400753A45 /* WUMP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 291839B01C72E6A400753A45 /* Build configuration list for PBXNativeTarget "GraphView" */;
+			buildConfigurationList = 291839B01C72E6A400753A45 /* Build configuration list for PBXNativeTarget "WUMP" */;
 			buildPhases = (
 				2918399A1C72E6A400753A45 /* Sources */,
 				2918399B1C72E6A400753A45 /* Frameworks */,
@@ -103,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = GraphView;
+			name = WUMP;
 			productName = GraphView;
-			productReference = 2918399E1C72E6A400753A45 /* GraphView.app */;
+			productReference = 2918399E1C72E6A400753A45 /* WUMP.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2918399D1C72E6A400753A45 /* GraphView */,
+				2918399D1C72E6A400753A45 /* WUMP */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +166,7 @@
 				291839A41C72E6A400753A45 /* ViewController.swift in Sources */,
 				29559B801C742D7800E77931 /* UIColor+colorFromHex.swift in Sources */,
 				291839A21C72E6A400753A45 /* AppDelegate.swift in Sources */,
+				18BCCEC91DCEA3C1000ECFD8 /* LoginViewController.swift in Sources */,
 				181DF3CC1DCE9BF20021420F /* ScrollableGraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +323,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		291839B01C72E6A400753A45 /* Build configuration list for PBXNativeTarget "GraphView" */ = {
+		291839B01C72E6A400753A45 /* Build configuration list for PBXNativeTarget "WUMP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				291839B11C72E6A400753A45 /* Debug */,
