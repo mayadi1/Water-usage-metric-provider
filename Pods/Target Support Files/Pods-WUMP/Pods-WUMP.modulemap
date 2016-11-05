@@ -1,0 +1,6 @@
+framework module Pods_WUMP {
+  umbrella header "Pods-WUMP-umbrella.h"
+
+  export *
+  module * { export * }
+}
