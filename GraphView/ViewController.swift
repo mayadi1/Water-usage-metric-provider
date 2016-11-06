@@ -31,11 +31,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        graphView = ScrollableGraphView(frame: self.view.frame)
-        graphView = createDarkGraph(self.view.frame)
+        graphView = ScrollableGraphView(frame: chartView.frame)
+        graphView = createDarkGraph(chartView.frame)
         
         graphView.set(data: data, withLabels: labels)
-        self.view.addSubview(graphView)
+        chartView.addSubview(graphView)
         
         setupConstraints()
         
@@ -46,26 +46,26 @@ class ViewController: UIViewController {
         
         currentGraphType.next()
         
-        self.view.removeConstraints(graphConstraints)
+        chartView.removeConstraints(graphConstraints)
         graphView.removeFromSuperview()
         
         switch(currentGraphType) {
         case .dark:
             addLabel(withText: "DARK")
-            graphView = createDarkGraph(self.view.frame)
+            graphView = createDarkGraph(chartView.frame)
         case .dot:
             addLabel(withText: "DOT")
-            graphView = createDotGraph(self.view.frame)
+            graphView = createDotGraph(chartView.frame)
         case .bar:
             addLabel(withText: "BAR")
-            graphView = createBarGraph(self.view.frame)
+            graphView = createBarGraph(chartView.frame)
         case .pink:
             addLabel(withText: "PINK")
-            graphView = createPinkMountainGraph(self.view.frame)
+            graphView = createPinkMountainGraph(chartView.frame)
         }
         
         graphView.set(data: data, withLabels: labels)
-        self.view.insertSubview(graphView, belowSubview: label)
+        chartView.insertSubview(graphView, belowSubview: label)
         
         setupConstraints()
     }
@@ -198,12 +198,12 @@ class ViewController: UIViewController {
         self.graphView.translatesAutoresizingMaskIntoConstraints = false
         graphConstraints.removeAll()
         
-        let topConstraint = NSLayoutConstraint(item: self.graphView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 0)
-        let rightConstraint = NSLayoutConstraint(item: self.graphView, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.right, multiplier: 1, constant: 0)
-        let bottomConstraint = NSLayoutConstraint(item: self.graphView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0)
-        let leftConstraint = NSLayoutConstraint(item: self.graphView, attribute: NSLayoutAttribute.left, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.left, multiplier: 1, constant: 0)
+        let topConstraint = NSLayoutConstraint(item: self.graphView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: chartView, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 0)
+        let rightConstraint = NSLayoutConstraint(item: self.graphView, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: chartView, attribute: NSLayoutAttribute.right, multiplier: 1, constant: 0)
+        let bottomConstraint = NSLayoutConstraint(item: self.graphView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: chartView, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0)
+        let leftConstraint = NSLayoutConstraint(item: self.graphView, attribute: NSLayoutAttribute.left, relatedBy: NSLayoutRelation.equal, toItem: chartView, attribute: NSLayoutAttribute.left, multiplier: 1, constant: 0)
         
-        //let heightConstraint = NSLayoutConstraint(item: self.graphView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Height, multiplier: 1, constant: 0)
+        //let heightConstraint = NSLayoutConstraint(item: self.graphView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: chartView, attribute: NSLayoutAttribute.Height, multiplier: 1, constant: 0)
         
         graphConstraints.append(topConstraint)
         graphConstraints.append(bottomConstraint)
@@ -212,7 +212,7 @@ class ViewController: UIViewController {
         
         //graphConstraints.append(heightConstraint)
         
-        self.view.addConstraints(graphConstraints)
+        chartView.addConstraints(graphConstraints)
     }
     
     // Adding and updating the graph switching label in the top right corner of the screen.
@@ -222,9 +222,9 @@ class ViewController: UIViewController {
         label = createLabel(withText: text)
         label.isUserInteractionEnabled = true
         
-        let rightConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.right, multiplier: 1, constant: -20)
+        let rightConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: chartView, attribute: NSLayoutAttribute.right, multiplier: 1, constant: -20)
         
-        let topConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 20)
+        let topConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: chartView, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 20)
         
         let heightConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 40)
         let widthConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: label.frame.width * 1.5)
@@ -232,8 +232,8 @@ class ViewController: UIViewController {
         let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(didTap))
         label.addGestureRecognizer(tapGestureRecogniser)
         
-        self.view.insertSubview(label, aboveSubview: graphView)
-        self.view.addConstraints([rightConstraint, topConstraint, heightConstraint, widthConstraint])
+        chartView.insertSubview(label, aboveSubview: graphView)
+        chartView.addConstraints([rightConstraint, topConstraint, heightConstraint, widthConstraint])
     }
     
     private func createLabel(withText text: String) -> UILabel {
