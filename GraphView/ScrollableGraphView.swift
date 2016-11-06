@@ -50,6 +50,7 @@ import UIKit
     @IBInspectable open var barWidth: CGFloat = 25;
     /// The actual colour of the bar.
     @IBInspectable open var barColor: UIColor = UIColor.gray
+    
     /// The width of the outline of the bar
     @IBInspectable open var barLineWidth: CGFloat = 1
     /// The colour of the bar outline
