@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var historyLabel: UILabel!
     var graphView = ScrollableGraphView()
     var currentGraphType = GraphType.dark
     var graphConstraints = [NSLayoutConstraint]()
@@ -319,11 +320,10 @@ class ViewController: UIViewController {
     func getUserInfo() {
         
         // Define server side script URL
-        let scriptUrl = "ec2-54-84-48-230.compute-1.amazonaws.com/user"
-        // Add one parameter
-       // let urlWithParams = scriptUrl + "?userName=\(userNameValue!)"
+        let scriptUrl = "http://ec2-54-84-48-230.compute-1.amazonaws.com/api/v1/device/today/firstDevice"
+       let urlWithParams = scriptUrl + ""
         // Create NSURL Ibject
-        let myUrl = NSURL(string: scriptUrl);
+        let myUrl = NSURL(string: urlWithParams);
         
         // Creaste URL Request
         let request = NSMutableURLRequest(url:myUrl! as URL);
