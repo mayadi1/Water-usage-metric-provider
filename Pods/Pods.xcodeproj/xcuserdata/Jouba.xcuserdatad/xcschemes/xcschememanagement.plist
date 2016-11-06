@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>LMGaugeView.xcscheme</key>
+		<key>Pods-WUMP.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-WUMP.xcscheme</key>
+		<key>SFGaugeView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3DEC4ABFF949003655C9AF207155DD3A</key>
+		<key>2BE21C7085413B763FB5625F5AC446C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>481AFB4AE13A187C49EF389785598201</key>
+		<key>CD0C0C71B2D932AB2B76711E22501E1D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

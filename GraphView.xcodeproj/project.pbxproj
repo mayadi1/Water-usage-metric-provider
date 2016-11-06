@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1807A9471DCFF0AE00DC90D5 /* MeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807A9461DCFF0AE00DC90D5 /* MeterViewController.swift */; };
 		181DF3CC1DCE9BF20021420F /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DF3CB1DCE9BF20021420F /* ScrollableGraphView.swift */; };
 		18BCCEC91DCEA3C1000ECFD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCEC81DCEA3C1000ECFD8 /* LoginViewController.swift */; };
 		291839A21C72E6A400753A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291839A11C72E6A400753A45 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		099FD8E569E282B5B33FFFCE /* Pods_WUMP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WUMP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		174AC590AC15B85DB7AA0763 /* Pods-WUMP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WUMP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WUMP/Pods-WUMP.debug.xcconfig"; sourceTree = "<group>"; };
+		1807A9461DCFF0AE00DC90D5 /* MeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeterViewController.swift; path = GraphView/MeterViewController.swift; sourceTree = "<group>"; };
 		181DF3CB1DCE9BF20021420F /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
 		18BCCEC81DCEA3C1000ECFD8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2918399E1C72E6A400753A45 /* WUMP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WUMP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 				291839A31C72E6A400753A45 /* ViewController.swift */,
 				18BCCEC81DCEA3C1000ECFD8 /* LoginViewController.swift */,
 				29559B7F1C742D7800E77931 /* UIColor+colorFromHex.swift */,
+				1807A9461DCFF0AE00DC90D5 /* MeterViewController.swift */,
 			);
 			name = Example;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1807A9471DCFF0AE00DC90D5 /* MeterViewController.swift in Sources */,
 				291839A41C72E6A400753A45 /* ViewController.swift in Sources */,
 				29559B801C742D7800E77931 /* UIColor+colorFromHex.swift in Sources */,
 				291839A21C72E6A400753A45 /* AppDelegate.swift in Sources */,

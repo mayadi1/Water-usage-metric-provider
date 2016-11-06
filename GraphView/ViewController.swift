@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.getUserInfo()
+        //self.getUserInfo()
         
         graphView = ScrollableGraphView(frame: chartView.frame)
         graphView = createDarkGraph(chartView.frame)
@@ -40,6 +40,9 @@ class ViewController: UIViewController {
         setupConstraints()
         
         addLabel(withText: "DARK (TAP HERE)")
+        
+        
+    
     }
     
     func didTap(_ gesture: UITapGestureRecognizer) {
