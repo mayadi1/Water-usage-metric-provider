@@ -63,9 +63,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PK0-mp-t6N">
-                                <frame key="frameInset" minY="2" width="54" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PK0-mp-t6N">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="HQJ-HD-md3"/>
+                                    <constraint firstAttribute="height" constant="49" id="eKp-Zn-zOv"/>
+                                </constraints>
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Izl-Gs-WZx"/>
@@ -73,6 +75,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PK0-mp-t6N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cY0-Sw-muo"/>
+                            <constraint firstItem="PK0-mp-t6N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="gnf-OT-f42"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IT6-tj-PAA">
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="NDl-rx-gfk">

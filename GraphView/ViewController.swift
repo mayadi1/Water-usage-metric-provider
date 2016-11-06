@@ -9,9 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
 
     var graphView = ScrollableGraphView()
     var currentGraphType = GraphType.dark
@@ -29,6 +26,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var chartView: UIView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         graphView = ScrollableGraphView(frame: chartView.frame)
@@ -306,6 +304,10 @@ class ViewController: UIViewController {
         self.dismiss(animated: false) { 
             
         }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
   
 }

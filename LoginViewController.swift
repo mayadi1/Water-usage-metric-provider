@@ -9,17 +9,15 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Hide Keyboard when touch outside
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-    }
-
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 
     func dismissKeyboard() {
