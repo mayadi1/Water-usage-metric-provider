@@ -1,12 +1,12 @@
 PODS:
-  - ScrollableGraphView (3.0.0)
+  - LMGaugeView (1.0.2)
 
 DEPENDENCIES:
-  - ScrollableGraphView
+  - LMGaugeView
 
 SPEC CHECKSUMS:
-  ScrollableGraphView: 9b0ff86f9193068ffaf7e7ea875dcd297d7e8ded
+  LMGaugeView: 9a56d44b57485ae53c993ad1c3416a80a6843d4f
 
-PODFILE CHECKSUM: 18d40f67f8316eadec9c4b9b24f0ae2ae4c98088
+PODFILE CHECKSUM: 57b5cbfc3cbf71452af8d1fdea74f69e76e679c1
 
 COCOAPODS: 1.0.1

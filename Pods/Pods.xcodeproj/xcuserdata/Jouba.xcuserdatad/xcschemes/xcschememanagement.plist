@@ -4,18 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-WUMP.xcscheme</key>
+		<key>LMGaugeView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ScrollableGraphView.xcscheme</key>
+		<key>Pods-WUMP.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>3DEC4ABFF949003655C9AF207155DD3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>481AFB4AE13A187C49EF389785598201</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
