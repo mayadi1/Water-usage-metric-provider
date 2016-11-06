@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     lazy var data: [Double] = self.generateRandomData(self.numberOfDataItems, max: 50)
     lazy var labels: [String] = self.generateSequentialLabels(self.numberOfDataItems, text: "FEB")
     
+    @IBOutlet weak var chartView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -300,6 +301,11 @@ class ViewController: UIViewController {
     }
     
   
+    @IBAction func backButtonPressed(_ sender: AnyObject) {
+        self.dismiss(animated: false) { 
+            
+        }
+    }
   
 }
 
