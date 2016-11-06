@@ -229,11 +229,12 @@ class ViewController: UIViewController {
         let heightConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 40)
         let widthConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: label.frame.width * 1.5)
         
-        let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(didTap))
-        label.addGestureRecognizer(tapGestureRecogniser)
+       //label show the different chart that I can use uncomment if I want to use.
+        //let tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(didTap))
+        //label.addGestureRecognizer(tapGestureRecogniser)
         
-        chartView.insertSubview(label, aboveSubview: graphView)
-        chartView.addConstraints([rightConstraint, topConstraint, heightConstraint, widthConstraint])
+        //chartView.insertSubview(label, aboveSubview: graphView)
+        //chartView.addConstraints([rightConstraint, topConstraint, heightConstraint, widthConstraint])
     }
     
     private func createLabel(withText text: String) -> UILabel {
