@@ -14,7 +14,7 @@ class MeterViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    var curentLevelOfWater = 0
+    var curentLevelOfWater = 0.0
 
     var SFGauge = SFGaugeView()
     @IBOutlet weak var meterView: UIView!
@@ -93,7 +93,7 @@ class MeterViewController: UIViewController {
                     print("should print first element on the history")
                     let num = (twDataArray.last?["amount"]!)
                     
-                    self.curentLevelOfWater = Int(num! as! Double)
+                    self.curentLevelOfWater = num! as! Double
                     print(self.curentLevelOfWater)
                     
                 }
@@ -130,9 +130,9 @@ class MeterViewController: UIViewController {
         SFGauge.backgroundColor = UIColor.colorFromHex(hexString: "#464646")
         SFGauge.maxImage = "unhappyWater"
         SFGauge.minImage = "happyWater"
-        SFGauge.maxlevel = 81
+        SFGauge.maxlevel = 81000
         SFGauge.minlevel = 0
-        SFGauge.currentLevel = self.curentLevelOfWater
+        SFGauge.currentLevel = Int(self.curentLevelOfWater)
         
         self.meterView.addSubview(SFGauge)
         
