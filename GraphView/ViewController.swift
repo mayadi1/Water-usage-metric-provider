@@ -89,9 +89,10 @@ class ViewController: UIViewController {
         graphView.shouldFill = true
         graphView.fillType = ScrollableGraphViewFillType.gradient
         graphView.fillColor = UIColor.colorFromHex(hexString: "#555555")
+
         graphView.fillGradientType = ScrollableGraphViewGradientType.linear
-        graphView.fillGradientStartColor = UIColor.colorFromHex(hexString: "#555555")
-        graphView.fillGradientEndColor = UIColor.colorFromHex(hexString: "#444444")
+        graphView.fillGradientStartColor = UIColor.colorFromHex(hexString: "#40a4bf")
+        graphView.fillGradientEndColor = UIColor.colorFromHex(hexString: "#40a4bf")
 
         graphView.dataPointSpacing = 80
         graphView.dataPointSize = 2
