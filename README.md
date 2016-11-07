@@ -1,6 +1,5 @@
 # Water-usage-metric-provider
 A smart tracker for water usage that provide metrics from just as little as a shower to as large as an entire city
-THINGS USED IN THIS PROJECT
 
 STORY
 The motivation behind the project came from the shortage of water and high costs of water bills in San Francisco. We started studying data about water usage in California Households. The average indoor gallon use per household per day in California is 174.31.
