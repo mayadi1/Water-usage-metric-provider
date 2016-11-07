@@ -24,7 +24,7 @@ class MeterViewController: UIViewController {
        self.meterConfig()
         //Getting the current usage from AWS
         self.getUserInfo()
-        let helloWorldTimer = Timer.scheduledTimer(timeInterval: 0.03, target: self, selector: #selector(MeterViewController.getUserInfo), userInfo: nil, repeats: true)
+        let helloWorldTimer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(MeterViewController.getUserInfo), userInfo: nil, repeats: true)
 
         
 
