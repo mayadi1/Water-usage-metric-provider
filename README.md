@@ -23,3 +23,7 @@ The Back End of the project is built using Node js
 For Hardware development we are using Intel Xeon Processor and ADC Sensor
 A hacked up Off-the-shelf dumb Water flow meter
 CUSTOM PARTS AND ENCLOSURES
+
+
+This project is part of AWS + Intel Hardware Hackathon - SF Edition
+https://www.hackster.io/aquasaver/water-usage-metric-provider-wump-b3bbcd
